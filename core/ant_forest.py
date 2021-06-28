@@ -4,7 +4,7 @@ import time
 import aircv as ac
 import core.adb_cmd as amd
 
-ksq = ac.imread('/Users/zheng/coding/study/ant-forest-script/img/ksq.jpeg')
+ksq = ac.imread('/Users/zheng/coding/study/ant-forest-script/img/ksq2.jpg')
 znl = ac.imread('/Users/zheng/coding/study/ant-forest-script/img/znl.jpeg')
 
 
@@ -23,7 +23,7 @@ def auto_charge():
         print(x)
         print(y)
         amd.screen_click(x, y-50)
-        print('睡眠 2 秒')
+        print('睡眠 1 秒')
         time.sleep(1)
 
     ac_znl = ac.find_template(sc, znl)
